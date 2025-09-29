@@ -1,0 +1,22 @@
+:root{
+  --bg:#0f1a2b;
+  --card:#1e2a44;
+  --text:#e8eefc;
+  --accent:#4cc9f0;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#f4f6f8;font-family:Arial, Helvetica, sans-serif;color:#111}
+header{background:#2b3e54;color:white;padding:16px 20px;text-align:center}
+main{padding:16px 20px;max-width:1000px;margin:0 auto}
+#role-section{margin:12px 0}
+label{font-weight:bold;margin-right:8px}
+select{padding:8px 12px;font-size:16px}
+#card-content{border:1px solid #ccc;border-radius:8px;padding:12px 14px;background:white}
+#card-content h2{margin:6px 0 8px 0}
+#card-details{margin-bottom:8px}
+textarea{width:100%;padding:8px;border:1px solid #ccc;border-radius:6px}
+button{margin-right:8px;padding:8px 12px;border:none;border-radius:6px;background:#3b82f6;color:white;cursor:pointer}
+button#clear-btn{background:#e11d48}
+#protocol-section{margin-top:14px;background:#f7f7f7;border:1px solid #ddd;padding:12px;border-radius:6px}
+pre{white-space:pre-wrap;word-wrap:break-word}
+footer{text-align:center;padding:12px 0;font-size:12px;color:#555}
