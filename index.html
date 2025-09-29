@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <title>Интерактивна игра: Казус ТехноВнос vs СкладМаркет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Интерактивна игра: Казус „ТехноВнос“ срещу „СкладМаркет“</h1>
+    <p>Изберете роля и започнете обсъждането. Протоколът се записва в LocalStorage и може да бъде принтиран.</p>
+  </header>
+
+  <main>
+    <section id="role-section">
+      <label for="role-select">Изберете роля:</label>
+      <select id="role-select">
+        <option value="">-- Изберете роля --</option>
+        <option>Представител на „ТехноВнос“</option>
+        <option>Юридически съветник на „ТехноВнос“</option>
+        <option>Представител на „СкладМаркет“</option>
+        <option>Юридически съветник на „СкладМаркет“</option>
+        <option>Технически експерт</option>
+        <option>Финансов директор на „СкладМаркет“</option>
+        <option>Медиатор</option>
+      </select>
+    </section>
+
+    <section id="card-content" aria-live="polite">
+      <h2 id="card-title"></h2>
+      <div id="card-details"></div>
+      <div id="notes">
+        <label for="notes-area">Бележки / Контра-аргументи:</label>
+        <textarea id="notes-area" rows="5" placeholder="Напишете вашите бележки тук..."></textarea>
+      </div>
+      <button id="save-btn">Запази бележки</button>
+      <button id="export-btn">Копирай протокол за печат</button>
+    </section>
+
+    <section id="protocol-section" aria-label="Протокол">
+      <h3>Кратък протокол (генериран след обсъждането)</h3>
+      <pre id="protocol-output"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Локално съхранение: прогресът се запазва в LocalStorage на вашия браузър.</p>
+    <button id="clear-btn">Изтрия всичко</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
